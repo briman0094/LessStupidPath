@@ -154,7 +154,7 @@ namespace System.IO
 		}
 		static bool PosixOS()
 		{
-			return Environment.NewLine.Contains( "\r" );
+			return !Environment.NewLine.Contains( "\r" );
 		}
 
 		string WindowsDriveSpecOrFolder()
