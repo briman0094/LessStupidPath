@@ -144,7 +144,7 @@ namespace System.IO
 		public string ToEnvironmentalPathWithoutFileName()
 		{
 			var path = ToEnvironmentalPath();
-			return path.Substring(0, path.Count() - FileNameWithExtension().Count() - 1);
+			return path.Substring(0, path.Length - FileNameWithExtension().Length - 1);
 		}
 
 		/// <summary> Returns a string representation of the path using path separators for the current execution environment </summary>
@@ -154,8 +154,7 @@ namespace System.IO
 		}
 		static bool PosixOS()
 		{
-			var p = (int)Environment.OSVersion.Platform;
-			return (p == 4) || (p == 6) || (p == 128);
+			return Environment.NewLine.Contains( "\r" );
 		}
 
 		string WindowsDriveSpecOrFolder()
