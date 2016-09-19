@@ -34,10 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="LessStupidPath-Portable.csproj.dotsettings" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="FilePath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
