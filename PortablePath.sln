@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortablePath", "src\PortablePath\PortablePath.csproj", "{16D0FD40-BFC3-420C-8665-5A142488258B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{BB7BE1D5-9FC2-4433-B174-C4B5F6EF60C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{165446B5-080C-4175-A0FA-7A333FBBCEE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortablePath.Unit.Tests", "src\PortablePath.Unit.Tests\PortablePath.Unit.Tests.csproj", "{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16D0FD40-BFC3-420C-8665-5A142488258B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D0FD40-BFC3-420C-8665-5A142488258B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D0FD40-BFC3-420C-8665-5A142488258B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D0FD40-BFC3-420C-8665-5A142488258B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16D0FD40-BFC3-420C-8665-5A142488258B} = {BB7BE1D5-9FC2-4433-B174-C4B5F6EF60C3}
+		{9A1FB8EA-1A41-4F0F-92A0-E5CA9D9BE3C8} = {165446B5-080C-4175-A0FA-7A333FBBCEE7}
+	EndGlobalSection
+EndGlobal
