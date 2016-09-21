@@ -111,6 +111,9 @@ namespace System.IO
 
 		public FilePath EnsureExtension( string extension )
 		{
+			if ( extension.StartsWith( "." ) )
+				throw new ArgumentException( $"Invalid extension: {extension}", nameof( extension ) );
+
 			string result = this.ToString();
 
 			if ( !this.HasExtension() || this.Extension().ToLower() != extension.ToLower() )
@@ -171,6 +174,14 @@ namespace System.IO
 
 		public bool HasExtension()
 		{
+			switch ( this.parts.Count )
+			{
+				case 0:
+					return false;
+				case 1:
+					return this.parts[ 0 ].Contains( "." );
+			}
+
 			return !FilePath.DirectorySeperatorAfterDot( this.ToEnvironmentalPath() );
 		}
 
