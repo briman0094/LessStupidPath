@@ -174,15 +174,10 @@ namespace System.IO
 
 		public bool HasExtension()
 		{
-			switch ( this.parts.Count )
-			{
-				case 0:
-					return false;
-				case 1:
-					return this.parts[ 0 ].Contains( "." );
-			}
+			if ( this.parts.Count == 0 )
+				return false;
 
-			return !FilePath.DirectorySeperatorAfterDot( this.ToEnvironmentalPath() );
+			return this.parts.Last().Contains( "." );
 		}
 
 		/// <summary>
